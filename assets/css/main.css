@@ -1,24 +1,166 @@
-*{
-    background-color: tan;
+:root{
+    --common-background-color:rgb(116, 51, 71);;
+}
+* { 
+    box-sizing: border-box; 
+} 
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header,main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+/* body > header {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    background: var(--common-background-color);
+    height: 100%;
+} */
+
+header {
+    display:flex;
+    background: var(--common-background-color);
+    height: 12vh;
+    color:white;
+  } 
+
+  header h1{
+      position: absolute;
+  }
+
+  header, footer, article, nav {
+    padding: 1em;
+  }
+
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main{
+    background-image: url("../images/summit.jpeg");
+    background-repeat: no-repeat;
+    max-width:100%;
+    max-height:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+}
+
+div.viewport{
+    width: 800px;
+    height:900px;
+    border:3px solid red;;
+    background-image: url("./assets/images/summit.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 0 -200px;
+}
+
+.nav-container{
+    background: #D7E8D4;
+    display: flex;
+    flex: 1;
+  }
+
+  .nav-container li{
+      display:flex;
+      flex-direction: column;
+      flex-grow:1;
+      padding-top: 30%;
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    flex: 12;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content article{
+      padding-top: 1%;
+      padding-left: 1%;
+  }
+
+  .content p{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: auto;
+      width: 100%;
+      font-family: "Arial",sans-serif;
+      font-size: 16px;
+      padding:10px;
+      padding-left:65%;
+  }
+
+footer{
+    background: var(--common-background-color);
+    height: 10vh;
+}
+
+/* body { 
+    background-color: #AAA; 
+    margin: 0px 50px 50px; 
+} 
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10%;
+}
+    
+.item { 
+    padding: 2rem; 
+    border: 5px solid #87b5ff; 
+    border-radius: 3px; 
+    font-size: 2em; 
+    font-family: sans-serif; 
+    font-weight: bold; 
+    background-color: #1c57b5; 
 }
 
 header {
     display: flex;
     border: 1px solid black;
+    background-color: rgb(77, 54, 54);
     justify-content: space-between;
     flex-wrap: wrap;
-  }
+    width: auto;
+    padding-top: 50px;
+  } */
 
-header div{
-      height:100px;
-      width: 500px;
-  }
+/* 
 
 main{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    border-color: black
+    border-color: black;
+    padding: 10%;
   }
 
 main div{
@@ -26,10 +168,7 @@ main div{
     width: 500px;
 }
 
-.div-narrow{
-    height: 400;
-    width: 200;
-}
+
 
 section {
     display: flex;
@@ -45,38 +184,12 @@ footer{
     border-color: black
   }
 
-.container-space-between{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    border-color: black
-}
 
-.container-items-left{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    border-color: black
-}
-
-.container-items-right{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    border-color: black
-}
-
-h1,h3{
-    background-color: tomato;
-    font-family: "Times"
-}
 
 /* h3{
     background-color: tomato;
     font-family: "Times"
 } */
 
-p{
-    font-family: "Arial" sans-serif;
-}
+
 
