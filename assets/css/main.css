@@ -2,6 +2,81 @@
     background-color: tan;
 }
 
-h1{
-    background-color: tomato;
+header {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+header div{
+      height:100px;
+      width: 500px;
+  }
+
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-color: black
+  }
+
+main div{
+    height:400px;
+    width: 500px;
 }
+
+.div-narrow{
+    height: 400;
+    width: 200;
+}
+
+section {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-color: black
+  }
+
+.container-space-between{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-color: black
+}
+
+.container-items-left{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-color: black
+}
+
+.container-items-right{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    border-color: black
+}
+
+h1,h3{
+    background-color: tomato;
+    font-family: "Times"
+}
+
+/* h3{
+    background-color: tomato;
+    font-family: "Times"
+} */
+
+p{
+    font-family: "Arial" sans-serif;
+}
+

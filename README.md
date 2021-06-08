@@ -23,7 +23,7 @@ A list of technologies used within the project:
 
 Link to github repository- https://github.com/dmobrienllc/hw2-dmobrienllc-portfolio
 
-Link to live site- 
+Link to live site- https://dmobrienllc.github.io/hw2-dmobrienllc-portfolio/
 
 ## FAQs
 ***
