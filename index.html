@@ -1,96 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <title>David O'Brien Web Dev Portfolio</title>
+<html>
+  <head>
+    <title>David O'Brien Web Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon-shark.jpeg"/>
-</head>
-<body>
-    <nav class="nav-container">
-        <ul>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfoli</a></li>
-            <li><a href="mailto:dmobrienllc@gmail.com">Contact Me</a></li>
-            <li>LinkedIn</li>
-        </ul>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>David O'Brien</h1>
+      <p>
+        Offering professional web development services to discerning clients.
+      </p>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+      <a href="#">Camera</a>
+      <a href="#">Tablet</a>
+      <a href="#">Toilet Paper</a>
+      <a href="#">Wooden Spoons</a>
     </nav>
-    <div class="main-container">
-        <header>
-            <h1>David O'Brien</h1>
-        </header>
-        <main class="content">
-            <article>
-                <p>Hi, my name is David O'Brien and I'm a web and database developer living partime in 
-                    Bloomington, MN, and parttime in Leadville, Co.</p> 
-                
-                <p>If you're looking for someone who can take your website design dreams to the next
-                    level with an affordable full-stack solution, take a look at my portfolio and
-                    please get in touch. I look forward to working with you!
-                </p>
-            </article>
-        </main>
-        <footer>
 
-        </footer>
-    </div>
-</body>
+    <!-- Body -->
+    <section class=about>
+      <div>
+        <h1>About Me</h1>
+        <p>Passionate, committed web devleloper, traveler, citizen.</p>
+        <p>Love to travel, climb, read (yes, actual books), play guitar,
+            hang out with my son, blah.
+        </p>
+      </div>
+      
+      <img src="assets/images/summit.jpeg" alt="One of my happy places!" alt="One of my happy places!"/>
+    </section>
+
+    <main>
+      <!-- Sidebar
+      <aside>
+        <h2>When you change the screen size...</h2>
+        <p>The navbar and this sidebar will be stacked on top of each other!</p>
+        <p>
+          And the product cards will wrap around as the screen gets smaller.
+        </p>
+      </aside>-->
+      
+      <!-- Product Cards -->
+      <div class="products">
+        <!--Very clunky way to do the first card larger requirement; I will get
+            a better selector working in the css when I have the basic functionality
+            completed, such as p:first-of-type {
+                                font-size: 1.25em;
+                                }-->
+        <section class="card first-card">
+          <header>Camera</header>
+          <img src="./assets/images/camera.jpg" alt="black camera" />
+          <p>Price: $300</p>
+        </section>
+        <section class="card">
+          <header>Tablet</header>
+          <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
+          <p>Price: $150</p>
+        </section>
+        <section class="card">
+          <header>Toilet Paper</header>
+          <img
+            src="./assets/images/toilet-paper.jpg"
+            alt="rolls of toilet paper in a basket"
+          />
+          <p>Price: $30</p>
+        </section>
+        <section class="card">
+          <header>Wooden Spoons</header>
+          <img
+            src="./assets/images/wooden-spoons.jpg"
+            alt="4 wooden spoons with different seasonings"
+          />
+          <p>Price: $10</p>
+        </section>
+      </div>
+    </main>
+   
+
+    <!-- Footer -->
+    <footer>
+      <h3>
+        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
+        window!
+      </h3>
+    </footer>
+  </body>
 </html>
-
-
-
-
-
-<!-- <header class="container">
-    <div>
-        <h1>David O'Brien</h1>
-    </div>
-
-    <div> 
-        <a href="#aboutme">About Me</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-    </div>
-    
-</header>
-
-<main>
-    <div class="viewport">Hi Im David</div>
-    <div class="div-narrow">
-        <h3>style:</h3>
-        <p></p>
-    </div>
-
-    <div>
-        <h3>mind</h3>
-        <p>Something about style reflecting the artistic/intellectual.</p>
-        <img src="smartpeople.jpg" alt="Thoughtful, intelligent design" alt="Thoughtful, intelligent design"/>
-    </div>
-
-    <div>
-        <h3>body</h3>
-        <p>Web design for balance and movement</p>
-        <img src="sprintersordancerorbikersorsomething.jpg" alt="Projecting Movement and Energy" alt="Projecting Movement and Energy"/>
-    </div>
-
-    <div>
-        <h3>spirit</h3>
-        <p>Web design for the values you share</p>
-        <img src="greaterthanourselves.jpg" alt="Doing good for others" alt="Doing good for others"/>
-    </div> 
-</main>
-
-<footer>
-    <div>
-        <h3>To Contact David O'Brien, or view open source repo =></h3>
-    </div>
-
-    <div>
-        <a href="mailTo:dmobrienllc@gmail.com">gmail</a>
-        <a href="dmobrienllc@linkedin.com" >LinkedIn</a>
-        <a href="dmobrienllc@github.com" >GitHub</a>
-        <a href="dmobrienllc@linkedin.com" >Twitter</a>
-    </div>
-</footer> -->
