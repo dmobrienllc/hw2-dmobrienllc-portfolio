@@ -8,7 +8,6 @@
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon-shark.jpeg"/>
   </head>
   <body>
-    <!-- Header -->
     <header>
       <h1>David O'Brien</h1>
       <p>
@@ -18,10 +17,9 @@
 
     <!-- Navbar -->
     <nav>
-      <a href="#">Camera</a>
-      <a href="#">Tablet</a>
-      <a href="#">Toilet Paper</a>
-      <a href="#">Wooden Spoons</a>
+      <a href="#aboutme">About Me</a>
+      <a href="#portfolio-samples">Portfolio Samples</a>
+      <a href="#contactme">Contact Me</a>
     </nav>
 
     <!-- Body -->
@@ -38,58 +36,74 @@
     </section>
 
     <main>
-      <!-- Sidebar
-      <aside>
-        <h2>When you change the screen size...</h2>
-        <p>The navbar and this sidebar will be stacked on top of each other!</p>
-        <p>
-          And the product cards will wrap around as the screen gets smaller.
-        </p>
-      </aside>-->
-      
-      <!-- Product Cards -->
-      <div class="products">
+      <div class="main-title">
+        <h3>Portfolio Samples: Click on image to view site!</h3>
+      </div>
+        
+      <!-- Portfolio Sample Cards -->
+      <div class="samples">
         <!--Very clunky way to do the first card larger requirement; I will get
             a better selector working in the css when I have the basic functionality
             completed, such as p:first-of-type {
                                 font-size: 1.25em;
                                 }-->
         <section class="card first-card">
-          <header>Camera</header>
-          <img src="./assets/images/camera.jpg" alt="black camera" />
-          <p>Price: $300</p>
+          <header>Semantic Tag Refactoring</header>
+          <a href="https://dmobrienllc.github.io/hw1-semantic-tags/" target="_blank">
+            <img src="./assets/images/semantic.jpeg" alt="Refactor your site tags to semantic tags" 
+              title="Refactor your site tags to semantic tags"/>
+          </a>
+          <p>Refactor for better search.</p>
         </section>
+
         <section class="card">
-          <header>Tablet</header>
-          <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
-          <p>Price: $150</p>
+          <header>Animal Activism</header>
+          <a href="https://dmobrienllc.github.io/hw1-semantic-tags/" target="_blank">
+            <img src="./assets/images/horton2.jpeg" alt="Adopt Horton Today!" title="Adopt Horton Today!"/>
+          </a>
+          <p>Harrowgate Elephant Shelter</p>
         </section>
+
         <section class="card">
-          <header>Toilet Paper</header>
-          <img
-            src="./assets/images/toilet-paper.jpg"
-            alt="rolls of toilet paper in a basket"
-          />
-          <p>Price: $30</p>
+          <header>Band/Music Sites</header>
+          <a href="https://dmobrienllc.github.io/hw1-semantic-tags/" target="_blank">
+            <img src="./assets/images/sonic-daydream2.jpeg" alt="Sonic Daydream Nation Band Site" title="Sonic Daydream Nation Band Site!"/>
+          </a>
+          <p>Sonic Daydream Nation</p>
         </section>
+
         <section class="card">
-          <header>Wooden Spoons</header>
-          <img
-            src="./assets/images/wooden-spoons.jpg"
-            alt="4 wooden spoons with different seasonings"
-          />
-          <p>Price: $10</p>
+          <header>Small Business Portal</header>
+          <a href="https://dmobrienllc.github.io/hw1-semantic-tags/" target="_blank">
+            <img src="./assets/images/bike-builder.jpeg" alt="Danish Design Bike Builders" title="Danish Design Bike Builders"/>
+          </a>
+          <p>Danish Design Bike Builders</p>
         </section>
       </div>
-    </main>
-   
 
-    <!-- Footer -->
-    <footer>
+    </main>
+
+    <section class="contact-methods">
+        <div>
+          <a name="contactme"></a>
+          <h4>To Contact Me, Or View More Code And Portfolio Samples:</h4>
+        </div>
+
+        <div>
+          <ul>
+            <li>gmail</li>
+            <li>LinkedIn</li>
+            <li>GitHub</li>
+            <li>Stack Overflow</li>
+          </ul>
+        </div>
+    </section>
+
+    <!--Footer -->
+    <!-- <footer>
       <h3>
-        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-        window!
+        @David OBrien Web Development
       </h3>
-    </footer>
+    </footer> -->
   </body>
 </html>

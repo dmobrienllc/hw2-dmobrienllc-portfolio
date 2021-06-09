@@ -1,5 +1,6 @@
 :root{
     --common-header-footer-color:#162e46;
+    --nav-common-background-color:#d8a47f;
   }
   
   * {
@@ -12,7 +13,7 @@
   }
   
   header {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     background:var(--common-header-footer-color);
     color: #fff;
@@ -24,7 +25,7 @@
   */
   nav {
     display: flex;
-    background-color: #d8a47f;
+    background:var(--nav-common-background-color);
   }
   
   nav a {
@@ -41,6 +42,7 @@
   main {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     border:1px solid black;
   }
   
@@ -51,24 +53,35 @@
     border:1px solid red;
   }
   
-  footer {
+  /* footer {
     padding: 20px;
     text-align: center;
     background:var( --common-header-footer-color);
     color: #fff;
-  }
+  } */
+
+  footer {
+    position: fixed;
+    padding: 5px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:var( --common-header-footer-color);
+    color: white;
+    text-align: center;
+ }
   
   /* 
   What does the justify-content property do?
   It is used to align the flex items; in our case, the product cards 
   */
-  .products {
+  .samples {
     flex: 10;
     background-color: #fff;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-between;
   }
   
   /* 
@@ -82,7 +95,7 @@
     border-width: 1px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 400px;
+    flex: 0 0 300px;
   }
 
   .first-card{
@@ -90,7 +103,7 @@
     border-width: 1px;
     border-radius: 10px;
     padding: 10px;
-    flex: 0 0 400px;
+    flex: 0 0 300px;
   }
   
   .card header {
@@ -103,6 +116,30 @@
   
   .card img {
     width: 100%;
+    height: min-content;
+  }
+
+  /* 
+  What does the justify-content property do?
+  It is used to align the flex items; in our case, the product cards 
+  */
+  .contact-methods{
+    flex: 1;
+    background-color: var(--nav-common-background-color);
+    border:1px sold red;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+  }
+
+  .contact-methods li{
+    display: inline;
+    text-decoration: none;
+    padding:8px;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
   /* 
